@@ -9,7 +9,6 @@ import Loader from '../layout/Loader';
 
 const Posts = () => {
 
-
     const [searchQuery, setSearchQuery] = useState("");
 
     const debouncedSearch = useDebounce(searchQuery, 300);
@@ -26,6 +25,7 @@ const Posts = () => {
             post.title.toLowerCase().includes(debouncedSearch.toLowerCase())
         );
     }, [debouncedSearch, allPosts]);
+    
 
     useEffect(() => {
         if (inView && hasNextPage) {
