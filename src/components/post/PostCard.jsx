@@ -3,7 +3,7 @@ import {Newspaper} from 'lucide-react'
 const PostCard = ({ post, innerRef }) => {
     return (
         <div ref={innerRef}>
-            <div className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:hover:border-gray-500 dark:border-gray-700">
+            <div className="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-md dark:bg-gray-800 dark:hover:border-gray-500 dark:border-gray-700">
                 <div className="flex justify-between items-center mb-2 text-gray-500">
                     <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center gap-2 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                         <Newspaper />

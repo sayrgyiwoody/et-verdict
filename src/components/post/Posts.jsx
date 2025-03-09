@@ -56,18 +56,18 @@ const Posts = () => {
 
                 <div className="relative w-full max-w-lg mx-auto">
                     <div className="relative w-full">
-                        <div className="absolute top-0 translate-y-1.5 left-2"><Search /></div>
+                        <div className="absolute top-0 translate-y-2 left-2"><Search /></div>
                         <input type="text"
                             placeholder="Search posts as you type..."
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full px-10 py-2 text-sm border rounded-md focus:ring-2 focus:ring-primary focus:outline-none bg-background border-border border-gray-400 placeholder:text-muted-foreground" />
+                            className="w-full bg-white dark:bg-transparent px-10 py-3 text-sm border rounded-md focus:ring-2 focus:ring-primary focus:outline-none bg-background border-border border-gray-400 placeholder:text-muted-foreground" />
                     </div>
 
                 </div>
             </div>
             <div className='relative'>
                 {isPostLoading && (
-                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         {Array.from({ length: 6 }).map((_, index) => (
                             <PostCardSkeleton key={index} />
                         ))}
@@ -79,7 +79,7 @@ const Posts = () => {
                 {error ? (
                     <div className="text-red-500 flex gap-2"><CircleX /> Error fetching posts</div>
                 ) : filteredPosts.length > 0 ? (
-                    <div className="grid gap-6 lg:grid-cols-3">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         {filteredPosts.map((post, index) => (
                             <PostCard
                                 innerRef={filteredPosts.length === index + 1 ? ref : undefined}
