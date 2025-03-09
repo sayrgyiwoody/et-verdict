@@ -4,6 +4,41 @@ This project fetches posts from JSONPlaceholder and displays them with an auto-s
 
 ![Demo Image](public/images/demo.png)
 
+## Project Structure
+
+The project directory structure is as follows:
+
+```
+et-verdict/
+├── public/
+│   ├── images
+├── src/
+│   ├── components/
+│   │   ├── layouts
+│   │   │   ├── Loader.jsx
+│   │   │   └── Navbar.jsx
+│   │   └── post
+│   │       ├── PostCard.jsx
+│   │       ├── PostCadSkeleton.jsx
+│   │       └── Posts.jsx
+│   ├── hooks/
+│   │   ├── useDebounce.js
+│   │   ├── useInfinitePost.js
+│   │   └── useLocalStorage.js
+│   ├── lib/
+│   │   └── apiClient.js
+│   ├── pages/
+│   │   └── Home.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── package.json
+├── README.md
+└── tailwind.config.js
+```
+
+
 ## Table of Contents
 
 - [Installation](#installation)
