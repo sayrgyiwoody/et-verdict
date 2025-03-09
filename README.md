@@ -14,12 +14,12 @@ et-verdict/
 │   ├── images
 ├── src/
 │   ├── components/
-│   │   ├── layouts
+│   │   ├── layout
 │   │   │   ├── Loader.jsx
 │   │   │   └── Navbar.jsx
 │   │   └── post
 │   │       ├── PostCard.jsx
-│   │       ├── PostCadSkeleton.jsx
+│   │       ├── PostCardSkeleton.jsx
 │   │       └── Posts.jsx
 │   ├── hooks/
 │   │   ├── useDebounce.js
@@ -37,7 +37,16 @@ et-verdict/
 ├── README.md
 └── tailwind.config.js
 ```
+This project is designed with a well-structured and refactored codebase to facilitate easy implementation and future enhancements.
 
+Key features include:
+- **Component-Based Architecture**: Each UI element is encapsulated in a reusable component, promoting code reuse and maintainability.
+- **Custom Hooks**: Reusable logic is abstracted into custom hooks, simplifying component code and enhancing readability.
+- **API Client**: A dedicated module for API interactions ensures a clean separation of data fetching logic from UI components.
+- **Styling with Tailwind CSS**: Utilizes utility-first CSS framework for rapid UI development and consistent styling.
+- **State Management with TanStack Query**: Efficiently handles data fetching, caching, and synchronization with server state.
+
+This structured approach ensures that the project is not only easy to understand and work with but also scalable for future development needs.
 
 ## Table of Contents
 
